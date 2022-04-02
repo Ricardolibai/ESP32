@@ -28,7 +28,6 @@ void loop()
     for(int dutycycle = 2048 ; dutycycle>=0 ; dutycycle --)
   {
     ledcWrite(channel , dutycycle);
-    digitalWrite(pin , HIGH);
     delay(15);
   }
 }
